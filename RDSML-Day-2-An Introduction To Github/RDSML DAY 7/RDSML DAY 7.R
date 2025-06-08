@@ -20,3 +20,18 @@ student_matrix
 
 #selecting an element from matrix
 student_matrix[4,1]
+
+summary(student_matrix)
+
+#data frames in R 
+student_names=c("Mr1","Ms2","Ms3","Mr4","Ms5")
+study_hours=c(20,24,46,62,22)
+marks=c(40,55,69,54,45)
+gender=c("Male","Female","Female","Male","Female")
+male=c("True","False","False","True","False")
+
+stu_data=data.frame(student_names,study_hours,marks,male)
+summary(stu_data)
+
+
+mean(stu_data$study_hours)
